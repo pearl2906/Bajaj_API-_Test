@@ -1,0 +1,20 @@
+{
+  "name": "bfhl-api",
+  "version": "1.0.0",
+  "description": "Bajaj Finserv Health Limited REST API — Chitkara Qualifier 1",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "node api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "@google/generative-ai": "^0.21.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
