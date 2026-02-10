@@ -58,7 +58,6 @@ function computeHCF(arr) {
 function computeLCM(arr) {
   return arr.reduce((acc, val) => lcm(acc, val));
 }
-
 async function askAI(question) {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey || apiKey === "your_gemini_api_key_here") {
@@ -66,7 +65,7 @@ async function askAI(question) {
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const prompt = `Answer the following question in exactly ONE word. Do not add any punctuation, explanation, or extra text. Just one word.\n\nQuestion: ${question}`;
 
